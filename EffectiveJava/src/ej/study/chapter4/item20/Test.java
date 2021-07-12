@@ -1,10 +1,14 @@
 package ej.study.chapter4.item20;
 
-import java.util.AbstractList;
-import java.util.List;
-import java.util.Objects;
+import java.util.*;
 
-public class Test {
+
+public class Test extends AbstractMapEntry {
+    public Test(Object key, Object value) {
+        super(key, value);
+    }
+
+    // 골격 구현을 사용해 완성한 구체 클래스
     static List<Integer> intArrayAsList(int[] a) {
         Objects.requireNonNull(a);
 
@@ -47,6 +51,13 @@ public class Test {
         for(int i : listA) {
             System.out.print(i + " ");
         }
+        System.out.println("");
+
+        Test test = new Test("effective", "java");
+        System.out.println("Key :: " + test.getKey() + " Value :: " + test.getValue());
+        System.out.println("equals :: " + test.equals(test));
+        System.out.println("hashCode :: " + test.hashCode());
+        System.out.println(test); // toString()
     }
 
 }
