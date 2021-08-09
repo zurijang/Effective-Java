@@ -13,7 +13,6 @@ public class Super {
     // shift 2번 + generate javadoc
     // 한글 주석 에러 : Other Command line arguments에 -locale ko_KR -encoding UTF-8 -charset UTF-8 -docencoding UTF-8 추가
     /**
-     * @ImplSpec
      * <p>This method Test
      * No parameter
      * overrideMe
